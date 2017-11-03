@@ -50,7 +50,6 @@ def obi_new(**kwargs):
         except jinja2.TemplateNotFound:
             print("Warning: Could not find template {0}".format(template_name))
 
-    os.chmod(project_path + '/noop.sh', 0755)
     # git init
     os.chdir(project_path)
     call(["git", "init"])
