@@ -31,7 +31,6 @@ def obi_new(**kwargs):
         [os.path.join("debian", "rules"), os.path.join("debian", "rules")],
         [".gitignore", "gitignore"],
         [".gitattributes", "gitattributes"],
-        ["noop.sh", "noop.sh"],
         ["project.yaml", "project.yaml"],
         ["README.md", "README.md"],
         [os.path.join(project_name, ".gitignore"), "gitignore"]

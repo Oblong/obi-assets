@@ -5,8 +5,10 @@
 #
 name: '{{project_name}}'
 rsync-excludes: [".git"]
-target: "./noop.sh"
+target: "/dev/null"
 build-cmd: "true"
+stop-cmd: "true"
+launch-cmd: "true"
 rooms:
   hex:
     project-dir: "/data1/dev/{{project_name}}/"
