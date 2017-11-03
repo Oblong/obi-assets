@@ -16,16 +16,16 @@ By default, this repository is configured to track all files with extensions of 
 
 Use `obi go` to deploy this directory into `/data1/dev/{{project_name}}` on every machine in the room.
 
-At the warehouse (hex):
+At the warehouse hex:
 
 ```
 obi go hex
 ```
 
-At Austin (hex):
+At the warehouse wall:
 
 ```
-obi go hex
+obi go wall
 ```
 
 Add more rooms to project.yaml as you need them!
