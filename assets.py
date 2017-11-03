@@ -23,6 +23,7 @@ def obi_new(**kwargs):
     '''
     obi new assets <project_name>
     '''
+    project_name = kwargs['project_name']
     pairs = list([
         [os.path.join("debian", "changelog"), os.path.join("debian", "changelog")],
         [os.path.join("debian", "compat"), os.path.join("debian", "compat")],
@@ -32,7 +33,8 @@ def obi_new(**kwargs):
         [".gitattributes", "gitattributes"],
         ["noop.sh", "noop.sh"],
         ["project.yaml", "project.yaml"],
-        ["README.md", "README.md"]
+        ["README.md", "README.md"],
+        [os.path.join(project_name, ".gitignore"), "gitignore"]
         ])
     env = jinja2.Environment(loader=jinja2.PackageLoader(__name__),
                              keep_trailing_newline=True)
