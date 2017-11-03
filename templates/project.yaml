@@ -1,0 +1,19 @@
+# Uses obi for only one purpose: rsync repo contents to a special location
+# on target machines:
+#
+#         /data1/dev/disaster-assets/
+#
+name: '{{project_name}}'
+rsync-excludes: [".git"]
+target: "./noop.sh"
+build-cmd: "true"
+rooms:
+  hex:
+    project-dir: "/data1/dev/{{project_name}}/"
+    user: oblong
+    hosts: [10.137.124.203, 10.137.124.204, 10.137.124.205, 10.137.124.206, 10.137.124.207]
+  wall:
+    build-cmd: "true"
+    project-dir: "/data1/dev/{{project_name}}/"
+    user: oblong
+    hosts: [10.137.124.200, 10.137.124.201, 10.137.124.202]

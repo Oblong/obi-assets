@@ -1,0 +1,5 @@
+{{project_name}} (0.0-18+g14895eb) trusty; urgency=low
+
+  * Initial packaging.
+
+ -- Oblong Industries <buildtools@oblong.com>  Mon, 25 Jul 2016 10:58:29 -0700

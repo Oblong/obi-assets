@@ -1,0 +1,12 @@
+Source: {{project_name}}
+Section: non-free/devel
+Priority: extra
+Maintainer: Oblong Industries, Inc <buildtools@oblong.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: http://oblong.com
+
+Package: {{project_name}}
+Depends: ${misc:Depends}
+Architecture: any
+Description: Assets for {{project_name}}
