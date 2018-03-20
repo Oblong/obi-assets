@@ -1,7 +1,7 @@
 # Uses obi for only one purpose: rsync repo contents to a special location
 # on target machines:
 #
-#         /data1/dev/disaster-assets/
+#         /data1/dev/{{project_name}}/
 #
 name: '{{project_name}}'
 rsync-excludes: [".git"]
