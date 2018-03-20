@@ -34,6 +34,7 @@ def obi_new(**kwargs):
         [".gitattributes", "gitattributes"],
         ["project.yaml", "project.yaml"],
         ["README.md", "README.md"],
+        ["Makefile", "Makefile"],
         [os.path.join(project_name_without_assets, ".gitignore"), "gitignore"]
         ])
     env = jinja2.Environment(loader=jinja2.PackageLoader(__name__),
