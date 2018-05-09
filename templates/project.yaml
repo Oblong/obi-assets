@@ -4,7 +4,7 @@
 #         /data1/dev/{{project_name}}/
 #
 name: '{{project_name}}'
-rsync-excludes: [".git"]
+rsync-excludes: [".git", "fetched.*"]
 target: "/dev/null"
 build-cmd: "true"
 stop-cmd: "true"
